@@ -1,1 +1,1 @@
-# singolo
+# https://vlavirus.github.io/singolo/
