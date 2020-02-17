@@ -1,4 +1,4 @@
-latin-ext */
+/*latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -17,74 +17,83 @@ latin-ext */
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-body {
-  /* width: 100%; */
+.body {
   margin: 0;
-	padding: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
 }
 
-.wrapper {
-  position: relative;
-  width: 1200px;
-  margin: 0 auto;
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .header {
   width: 100%;
   height: 89px;
   background-color: #2d303a;
-  
 }
 
-/* .box {
-  height: 89;
-  position: absolute;
-  top: 50%;
-  margin: -50px 0 0 0;
-} */
+.header__include {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 
-h1 {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 25px;
+.box__name {
+  height: 100%;
+  width: 140px;
+}
+
+.logo__name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
   color: #ffffff;
-  font-family: "Lato";
-  font-weight: 700;
-  text-align: left;
-  vertical-align: middle;
-  padding-top: 32px;
-  /* top: 50%; */
-
-}
-
-.ye {
-  color: #d9655f;
-}
-
-.header li {
-  display: inline-block;
   text-transform: uppercase;
-  color: #ffffff;
-  /* color: #f06c64; */
-  font-family: "Lato";
-  font-weight: 700;
-  text-align: left;
-  padding: 30px;
 }
+
+.header__navigation {
+  width: 380px;
+  height: 100%;
+}
+
+.header__navigation .menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  /* padding-left: 60px; */
+}
+
+li {
+  /* font-weight: bold; */
+  line-height: 65px;
+  font-size: 12px;
+  font-family: "Lato";
+  color: #ffffff;
+  /* text-align: left; */
+  text-transform: uppercase ;
+}
+
+
 
 /* .header__bottom { */
   /* width: 100%;
   height: 6px;
   background-color: #323746; */
-}
-/* a { */
-  /* font-size: 25px;
+/* } */
+
+/* a {
+  font-size: 25px;
   line-height: 6px;
   color: #ffffff;
   font-family: "Lato";
   font-weight: 700;
-  text-align: left; */
-}
+  text-align: left;
+} */
 
 /* .screens {
   height: 600px;
