@@ -86,13 +86,12 @@
 .portfolio__describe {
   width: 940px;
   margin: 0 auto;
-  padding: 61px 40px 0 40px;
+  padding: 60px 40px 0 40px;
 }
 
 
 .portfolio__describe--Portfolio {
   font-size: 30px;
-  /* line-height: 18px; */
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
@@ -109,7 +108,7 @@ p#portfolio__describe--text {
   font-family: "Lato";
   font-weight: 300;
   text-align: left;
-  margin-top: 21px;
+  margin-top: 22px;
   margin-bottom: 10px;
 }
 
@@ -123,8 +122,6 @@ p#portfolio__describe--text {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  /* margin-top: 17px;
-  margin-bottom: 18px; */
   margin: 17px 0 17px 1px;
   padding: 0;
   height: 24px;
@@ -145,27 +142,68 @@ a {
   
 }
 
-.portfolio__navigation--menu-link {
+.frame-1 {
+  position: middle;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 16px;
+  
+}
+
+.portfolio__navigation--menu-link-1 {
+  display: inline-block;
+  font-size: 12px;
+  color: #dedede;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding: 0 6px 0 7px;
+  margin: auto 0;
+}
+.portfolio__navigation--menu-link-2 {
   display: inline-block;
   font-size: 12px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
   text-align: left;
-  padding: 0 6px 0 6px;
+  padding: 0 6px 0 6.6px;
   margin: auto 0;
-  
 }
+
+.portfolio__navigation--menu-link-3 {
+  display: inline-block;
+  font-size: 12px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding: 0 6px 0 4.5px;
+  margin: auto 0;
+}
+
+.portfolio__navigation--menu-link-4 {
+  display: inline-block;
+  font-size: 12px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding: 0 5px 0 6px;
+  margin: auto 0;
+}
+
 
 .funny__images {
   display: grid;
   grid-gap: 17px 20px;
   grid-template-columns: 220px 220px 220px 220px;
-  /* grid-template-rows: 220px 220px 220px; */
   width: 940px;
   height: 600px;
   margin: 0 auto;
-  /* max-height: hidden; */
   overflow: hidden;
 }
 
@@ -177,7 +215,6 @@ a {
 }
 
 .about__content {
-  /* width: 1020px; */
   width: 100%;
   height: 728px;
   background-color: #f2f2f2;
@@ -185,7 +222,6 @@ a {
 
 .about__us {
   width: 940px;
-  /* height: 100%; */
   margin: 0 auto;
   padding: 60px 40px 0 40px;
 }
@@ -194,7 +230,6 @@ a {
 .about__us--describe-About {
   margin: 0;
   font-size: 30px;
-  /* line-height: 18px; */
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
@@ -217,7 +252,6 @@ a {
 
 .about__us--team {
   display: grid;
-  /* grid-gap: 17px 20px; */
   grid-column-gap: 19px;
   grid-template-columns: 300px 300px 302px;
   margin-top: 48px;
@@ -226,7 +260,7 @@ a {
 
 .about__us--team-card {
   width: 300px;
-  height: 443px;
+  height: 443pxgi;
   overflow: hidden;
 }
 
