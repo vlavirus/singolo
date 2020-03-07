@@ -127,97 +127,41 @@
   justify-content: space-between;
 }
 
-#name {
-  width: 619px;
-  height: 38px;
+#name, #email, #subject {
+  width: 591px;
+  height: 22px;
+  line-height: 22px;
   border-radius: 5px;
   background-color: #d6564f;
   resize: none;
   outline: none;
   border: none;
-  margin-top: 1px;
+  margin: 1px 0 12px 0;
   padding: 0;
+  color: aliceblue;
+  padding: 8px 14px;
 }
 
-
-#email {
-  width: 619px;
-  height: 38px;
-  border-radius: 5px;
-  background-color: #d6564f;
-  resize: none;
-  outline: none;
-  border: none;
-  margin: 13px 0 0 0;
-  padding: 0;
-}
-
-#subject {
-  width: 619px;
-  height: 38px;
-  border-radius: 5px;
-  background-color: #d6564f;
-  resize: none;
-  outline: none;
-  border: none;
-  margin: 13px 0 13px 0;
-  padding: 0;
-}
 
 #describe {
-  width: 619px;
-  height: 202px;
+  width: 591px;
+  height: 188px;
+  line-height: 22px;
   border-radius: 5px;
   background-color: #d6564f;
   resize: none;
   outline: none;
   border: none;
-  margin: 0;
-  /* padding: 15px 0 0 0; */
+  margin: 1px 0 0 0;
+  padding: 7px 14px;
+  color: aliceblue;
 }
 
-#name::placeholder, #email::placeholder, #subject::placeholder {
+#name::placeholder, #email::placeholder, #subject::placeholder, #describe::placeholder {
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
   font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
-  vertical-align: middle;
-  padding: 8px 14px;
-}
-
-/* #email::placeholder {
-  font-size: 12px;
-  line-height: 22px;
-  color: #f48c8f;
-  font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
-  vertical-align: middle;
-  padding: 8px 14px;
-}
-
-#subject::placeholder {
-  font-size: 12px;
-  line-height: 22px;
-  color: #f48c8f;
-  font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
-  vertical-align: middle;
-  padding: 8px 14px;
-} */
-
-#describe::placeholder {
-  font-size: 12px;
-  line-height: 22px;
-  color: #f48c8f;
-  font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
-  vertical-align: middle;
-  padding: 7px 14px 0;
 }
 
 .contact__infomation {
@@ -310,14 +254,6 @@
   margin-left: 2px;
 }
 
-/* .copyright__by {
-  font-family: "Lato";
-  color: #666d89;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-} */
-
 .bootom__social--media {
   display: flex;
   height: 32px;
@@ -374,5 +310,10 @@
 
 #name:hover::placeholder, #email:hover::placeholder, #subject:hover::placeholder, #describe:hover::placeholder {
   color: #f0d8d9;
+  transition: 0.5s;
+}
+
+#name:focus, #email:focus, #subject:focus, #describe:focus {
+  background-color: #2d303a;
   transition: 0.5s;
 }
