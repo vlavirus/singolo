@@ -15,20 +15,21 @@
             </div>
             <div class="form">
                 <form action="" method="POST">
-                    <textarea id="name" name="name" cols="80" rows="1" placeholder="Name (Required)" ></textarea>
-                    <textarea id="email" name="email" cols="85" rows="1" placeholder="Email (Required)"></textarea>
-                    <textarea name="subject" id="subject" cols="85" rows="1" placeholder="Subject"></textarea>
-                    <textarea name="describe" id="describe" cols="85" rows="20" placeholder="Describe your project in detail..."></textarea>
+                    <input class="name" name="name" type="text" cols="80" placeholder="Name (Required)" required></input>
+                    <input class="email" name="email" type="email" cols="85" placeholder="Email (Required)" required></input>
+                    <input name="subject" class="subject" cols="85" placeholder="Subject"></input>
+                    <textarea name="describe" class="describe" placeholder="Describe your project in detail..."></textarea>
+                    <button class="form__confirm" >Submit</button>
                 </form>
                 <div class="contact__infomation">
                     <div class="contact__infomation--text">
                         <h5 class="contact__infomation--text-header">Contact Information</h5>
                             <p class="contact__infomation--text-describe">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p> 
-                            <div class="contact__infomation--text-contacts">
-                                <a id="navigation"><img src = assets/img/navigation.png alt="img">Elm St. 14/05 Lost City</a>
-                                <a id="telephone" href="tel:03528 331 86 35"><img src="assets/img/phone1.png" alt="img">03528 331 86 35</a> 
-                                <a id="email1" href="email:info@singolo.com"><img src="assets/img/mail.png" alt="img">info@singolo.com</a>
-                            </div>
+                    </div>
+                    <div class="contact__infomation--contacts">
+                        <div class="icon_1"><img src = assets/img/navigation.png alt="img"><a href="">Elm St. 14/05 Lost City</a></div>
+                        <div class="icon_2"><img src="assets/img/phone1.png" alt="img"><a href="tel:03528 331 86 35">03528 331 86 35</a></div> 
+                        <div class="icon_3"><img src="assets/img/mail.png" alt="img"><a href="mailto:info@singolo.com">info@singolo.com</a></div>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@
     <div class="bottom">
         <section class="bottom__information">
             <div class="copyright">
-                <img src="assets/img/copy.png" alt="error">
+                <p class="copyright__text">© Copyright 2013</p>
             </div>
             <div class="bootom__social--media">
                 <div class="bootom__social--media-sircle">
@@ -61,10 +62,8 @@
                         Your browser doesn't support svg
                     </object>
                 </div>
-                <!-- <a href=""><img src="assets/img/facebook (4).svg" alt="" class="bootom__social--media-object"></a> -->
             </div>
         </section>
     </div>
-    
 </body>
 </html>

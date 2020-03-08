@@ -98,13 +98,11 @@
 .registration__text--Header {
   font-size: 30px;
   color: #f0d8d9;
-  /* font-family: "Lato"; */
-  /* font-style: italic; */
   font: italic;
-  /* style: italic; */
   font-weight: 900;
   text-align: left;
   margin: 9px 0;
+  letter-spacing: -0.2px;
 }
 
 #registration__text--description {
@@ -127,23 +125,26 @@
   justify-content: space-between;
 }
 
-#name, #email, #subject {
+.name, .email, .subject {
+  font-size: 14px;
+  font-family: "Lato";
   width: 591px;
   height: 22px;
-  line-height: 22px;
+  line-height: 2px;
   border-radius: 5px;
   background-color: #d6564f;
   resize: none;
   outline: none;
   border: none;
-  margin: 1px 0 12px 0;
-  padding: 0;
+  margin: 1px 0 15px 0;
   color: aliceblue;
-  padding: 8px 14px;
+  padding: 6px 14px 10px 14px;
 }
 
 
-#describe {
+.describe {
+  font-size: 14px;
+  font-family: "Lato";
   width: 591px;
   height: 188px;
   line-height: 22px;
@@ -157,7 +158,29 @@
   color: aliceblue;
 }
 
-#name::placeholder, #email::placeholder, #subject::placeholder, #describe::placeholder {
+.form__confirm {
+  height: 38px;
+  width: 80px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  background-color: #d6564f;
+  outline: none;
+  border-color:  #666d89;
+  font-size: 15px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  margin: 13px 0 0 0;
+}
+
+.form__confirm:hover {
+  background-color: #2d303a;
+  color: #f0d8d9;
+  transition: 1s;
+}
+
+.name::placeholder, .email::placeholder, .subject::placeholder, .describe::placeholder {
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
@@ -170,7 +193,7 @@
 }
 
 .contact__infomation--text {
-  height: 100%;
+  height: 135px;
   width: 100%;
 }
 
@@ -198,40 +221,38 @@
   margin: 10px 0;
 }
 
-.navigation {
-  width: 300px;
-  height: 90px;
+.contact__infomation--contacts {
+  width: 150px;
+  height: 130px;
+  margin-top: 1px;
+
+}
+
+.contact__infomation--contacts a{
   font-size: 12px;
-  line-height: 22px;
+  line-height: 19px;
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
   text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
-.telephone {
-  width: 100%;
-  font-size: 12px;
-  line-height: 22px;
-  color: #f0d8d9;
-  font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
+.icon_1 img{
+  margin: 2px 13px 0 3px;
 }
 
-.contact__infomation--text-contacts {
-  width: 100%;
-  height: 50px;
+.icon_2 img{
+  margin: 0 11px 0 1px;
 }
 
-.email {
-  width: 100%;
-  font-size: 12px;
-  line-height: 22px;
-  color: #f0d8d9;
-  font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
+.icon_3 img{
+  margin-right: 11px;
+}
+
+.icon a{
+  margin-bottom: 1px;
 }
 
 .bottom {
@@ -259,6 +280,7 @@
   height: 32px;
   width: 152px;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .registration__bottom {
@@ -278,21 +300,25 @@
 .bootom__social--media-object-1 {
   padding-left: 11px;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .bootom__social--media-object-2 {
   padding-left: 7px;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .bootom__social--media-object-3 {
   padding-left: 8px;
   padding-top: 9px;
+  cursor: pointer;
 }
 
 .bootom__social--media-object-4 {
   padding-left: 8px;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .shp0 {
@@ -303,17 +329,28 @@
   transition: 0.5s;
 } 
 
-#name:hover, #email:hover, #subject:hover, #describe:hover {
+.name:hover, .email:hover, .subject:hover, .describe:hover {
   background-color: #2d303a;
   transition: 1s;
 }
 
-#name:hover::placeholder, #email:hover::placeholder, #subject:hover::placeholder, #describe:hover::placeholder {
+.name:hover::placeholder, .email:hover::placeholder, .subject:hover::placeholder, .describe:hover::placeholder {
   color: #f0d8d9;
   transition: 0.5s;
 }
 
-#name:focus, #email:focus, #subject:focus, #describe:focus {
+.name:focus, .email:focus, .subject:focus, .describe:focus {
   background-color: #2d303a;
   transition: 0.5s;
+}
+
+.email:valid, .name:valid {
+  background-color: gold;
+}
+
+.copyright__text {
+  font-size: 12px;
+  color: #666d89;
+  margin: 2px 0 0 0;
+  letter-spacing: -0.15px;
 }
