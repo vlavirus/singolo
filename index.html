@@ -7,6 +7,7 @@
     <title>singolo</title>
 </head>
 <body class="body">
+    <div class="anchor" id="header"></div>
     <header class="header">
         <div class="header__items">
             <article class="header__name">
@@ -14,35 +15,46 @@
             </article>
             <nav class="navigation">
                 <ul class="navigation__menu">
-                    <li class="navigation__menu--item"><a href="" class="navigation__menu--link"><span>home</span></a></li>
-                    <li class="navigation__menu--item"><a href="" class="navigation__menu--link">services</a></li>
-                    <li class="navigation__menu--item"><a href="" class="navigation__menu--link">portfolio</a></li>
-                    <li class="navigation__menu--item"><a href="" class="navigation__menu--link">about</a></li>
-                    <li class="navigation__menu--item"><a href="" class="navigation__menu--link">contact</a></li>
+                    <li class="navigation__menu--item"><a href="#header" class="navigation__menu--link selected">home</a></li>
+                    <li class="navigation__menu--item"><a href="#services__select" class="navigation__menu--link notchosen">services</a></li>
+                    <li class="navigation__menu--item"><a href="#portfolio" class="navigation__menu--link notchosen">portfolio</a></li>
+                    <li class="navigation__menu--item"><a href="#about__us" class="navigation__menu--link notchosen">about</a></li>
+                    <li class="navigation__menu--item"><a href="#registration" class="navigation__menu--link notchosen">contact</a></li>
                 </ul>
             </nav>
-        </div>  
+        </div>
+    <div class="header__bottom"></div>  
     </header>
-    <div class="header__bottom"></div>
-        <div class="container">
-            <div class="slides">
-                <button class="slides__left">
-                    <img src="assets/img/left.png" alt="left">
-                </button>
-                <div class="slides__conten">
+    <div class="container">
+        <div class="slides">
+            <button class="control slides__left">
+                <img src="assets/img/left.png" alt="left">
+            </button>
+            <div class="slides_container active">
+                <div class="slides__content">
                     <div class="slides__conten--vertical-phone">
                         <img src="assets/img/iPhone Vertical.png" alt="vertical-phone">
                     </div>
                     <div class="slides__conten--horizontal-phone">
-                            <img src="assets/img/iPhone Horizontal.png" alt="horizontal-phone">
+                        <img src="assets/img/iPhone Horizontal.png" alt="horizontal-phone">
                     </div>
                 </div>
-                <button class="slides__right">
-                    <img src="assets/img/right.png" alt="right">
-                </button>
             </div>
+            <div class="slides_container">
+                <div class="slides__content-2">
+                    <div class="slides__conten-group">
+                        <img src="assets/img/Group 2.png" alt="three__phone">
+                    </div>
+                </div>
+            </div>
+
+            <button class="control slides__right">
+                <img src="assets/img/right.png" alt="right">
+            </button>
         </div>
+    </div>
     <div class="screens_bottom"></div>
+    <div class="anchor" id="services__select"></div>
     <div class="services">
         <div class="services__describe">
             <h2 class="services__describe--our-services">Our Services</h2>
@@ -61,7 +73,7 @@
                     <div class="card__section--icon"><img src="assets/img/bulb.png" alt="pen"></div>
                     <div class="card__section--text">
                         <h3 class="card__section--name">Inovative Ideas</h3>
-                        <p class="card__section--description">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        <p class="card__section--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
                 </section>
                 <section class="card__section">
@@ -89,13 +101,14 @@
                     <div class="card__section--icon"><img src="assets/img/star.png" alt="pen"></div>
                     <div class="card__section--text">
                         <h3 class="card__section--name">Feel Like A Star</h3>
-                        <p class="card__section--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        <p class="card__section--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
                 </section>
             </div>
         </div>
     </div>
     <div class="services__bottom"></div>
+    <div class="anchor" id="portfolio"></div>
     <section class="portfolio">
         <div class="portfolio__describe">
             <h3 class="portfolio__describe--Portfolio">Portfolio</h3>
@@ -126,6 +139,7 @@
         </div>
     </section>
     <div class="portfolio__bottom"></div>
+    <div class="anchor" id="about__us"></div>
     <section class="about__content">
         <div class="about__us">
             <div clas="about__us--describe">
@@ -170,6 +184,7 @@
             </div>
     </section>
     <div class="about__content--bottom"></div>
+    <div class="anchor" id="registration"></div>
     <section class="registration">
         <div class="registration__content">
             <div class="registration__text">
@@ -228,5 +243,6 @@
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
