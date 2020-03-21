@@ -277,6 +277,7 @@ span {
   width: 40px;
   left: 87px;
   top: 410px;
+  cursor: pointer;
 }
 
 .black__screen2 {
@@ -295,6 +296,7 @@ span {
   width: 40px;
   left: 322px;
   top: 208px;
+  cursor: pointer;
 }
 
 .black__screen3 {
@@ -305,6 +307,7 @@ span {
   background-color: black;
   left: 291px;
   top: 68px;
+  
 }
 
 .button_black__screen3 {
@@ -313,6 +316,7 @@ span {
   width: 45px;
   left: 368px;
   top: 433px;
+  cursor: pointer;
 }
 
 
