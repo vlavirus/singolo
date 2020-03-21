@@ -1,15 +1,12 @@
 
 window.onload = function() {
-    // console.log('Hello!');
-
-    console.log('HELLO');
-
+    // console.log('HELLO');
     addMenuClickerHandler();
 }
 
 const addMenuClickerHandler = () => {
     document.querySelector('.navigation__menu').addEventListener('click', (e) => {
-        console.log(e);
+        // console.log(e);
         if (e.target.classList.contains('navigation__menu--link')) {
             let clickedTag = e.target;
             removeActiveTags();
@@ -20,7 +17,7 @@ const addMenuClickerHandler = () => {
 
 const removeActiveTags = () => {
     let items = document.querySelectorAll('.navigation__menu--link');
-    console.log(items);    
+    // console.log(items);    
     items.forEach(items => {
         items.classList.remove('selected');
         items.classList.add('notchosen');
@@ -36,9 +33,9 @@ const selectClickedTag = (clickedTag) => {
 let slides = document.querySelectorAll('.slides_container');
 let backGround = document.querySelectorAll('.container');
 let stripe = document.querySelectorAll('.screens_bottom');
-console.log(backGround);
+// console.log(backGround);
 let currentSlide = 0;
-console.log(slides);
+// console.log(slides);
 let isEnable = true;
 
 function changeCurrentSlide(n) {
@@ -113,4 +110,121 @@ document.querySelector('.control.slides__right').addEventListener('click', funct
     if (isEnable) {
         nextSlide(currentSlide);
     }
+});
+
+let funnyImages = document.querySelectorAll('.images__items');
+
+document.querySelector('.portfolio__navigation--menu-link.first').addEventListener('click', function() {
+    let buttons = document.querySelectorAll('.frame');
+
+    buttons.forEach(buttons => {
+        buttons.classList.remove('active_frame');
+    });
+    let parrent = document.querySelector('.portfolio__navigation--menu-link.first').parentElement;
+    parrent.classList.add('active_frame');
+
+    funnyImages[0].classList.remove('change');
+    funnyImages[1].classList.remove('change');
+    funnyImages[2].classList.remove('change');
+});
+
+
+document.querySelector('.portfolio__navigation--menu-link.second').addEventListener('click', function() {
+    let buttons = document.querySelectorAll('.frame');
+
+    buttons.forEach(buttons => {
+        buttons.classList.remove('active_frame');
+    });
+    let parrent = document.querySelector('.portfolio__navigation--menu-link.second').parentElement;
+    parrent.classList.add('active_frame');
+
+    funnyImages[0].classList.remove('change');
+    funnyImages[1].classList.remove('change');
+    funnyImages[2].classList.remove('change');
+    funnyImages[0].classList.add('change');
+});
+
+document.querySelector('.portfolio__navigation--menu-link.third').addEventListener('click', function() {
+    let buttons = document.querySelectorAll('.frame');
+
+    buttons.forEach(buttons => {
+        buttons.classList.remove('active_frame');
+    });
+    let parrent = document.querySelector('.portfolio__navigation--menu-link.third').parentElement;
+    parrent.classList.add('active_frame');
+
+    funnyImages[0].classList.remove('change');
+    funnyImages[1].classList.remove('change');
+    funnyImages[2].classList.remove('change');
+    funnyImages[0].classList.add('change');
+    funnyImages[1].classList.add('change');
+});
+
+document.querySelector('.portfolio__navigation--menu-link.fourth').addEventListener('click', function() {
+    let buttons = document.querySelectorAll('.frame');
+
+    buttons.forEach(buttons => {
+        buttons.classList.remove('active_frame');
+    });
+    let parrent = document.querySelector('.portfolio__navigation--menu-link.fourth').parentElement;
+    parrent.classList.add('active_frame');
+
+    funnyImages[0].classList.add('change');
+    funnyImages[1].classList.add('change');
+    funnyImages[2].classList.add('change');
+});
+
+let imagesActive = document.querySelector('.funny__images');
+
+imagesActive.addEventListener('click', (event) => {
+    imagesActive.querySelectorAll('img').forEach(element => element.classList.remove('lightOn'));
+    event.target.classList.add('lightOn');
+});
+
+document.querySelector('.button_black__screen1').addEventListener('click', function() {
+    if(document.querySelector('.black__screen1').classList[1] == "disable" ) {
+        document.querySelector('.black__screen1').classList.remove('disable')
+    } else {
+        document.querySelector('.black__screen1').classList.add('disable')
+    }
+});
+
+document.querySelector('.button_black__screen2').addEventListener('click', function() {
+    if(document.querySelector('.black__screen2').classList[1] == "disable" ) {
+        document.querySelector('.black__screen2').classList.remove('disable')
+    } else {
+        document.querySelector('.black__screen2').classList.add('disable')
+    }
+});
+
+document.querySelector('.button_black__screen3').addEventListener('click', function() {
+    if(document.querySelector('.black__screen3').classList[1] == "disable" ) {
+        document.querySelector('.black__screen3').classList.remove('disable')
+    } else {
+        document.querySelector('.black__screen3').classList.add('disable')
+    }
+});
+
+document.querySelector('.form__confirm').addEventListener('click', (event) => {
+    event.preventDefault();
+    if ( document.querySelector('.subject').value == '' ) {
+        document.querySelector('.pop_massege-theme').innerHTML = 'Без темы';
+    } else {
+        document.querySelector('.pop_massege-theme').innerHTML = 'Тема: ' + document.querySelector('.subject').value;
+    }
+
+    if ( document.querySelector('.describe').value == '' ) {
+        document.querySelector('.pop_massege-description').innerHTML = 'Без описания';
+    } else {
+        document.querySelector('.pop_massege-description').innerHTML = 'Описание: ' + document.querySelector('.describe').value;
+    }
+
+
+    document.querySelector('.pop_massege').classList.add('disable');
+});
+
+
+document.querySelector('.pop_masseg-quit').addEventListener('click', (event) =>{
+
+    document.querySelector('.pop_massege').classList.remove('disable');
 });

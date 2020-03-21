@@ -35,9 +35,13 @@
                     <div class="slides__conten--vertical-phone">
                         <img src="assets/img/iPhone Vertical.png" alt="vertical-phone">
                     </div>
+                    <div class="black__screen1"></div>
+                    <div class="button_black__screen1"></div>
                     <div class="slides__conten--horizontal-phone">
                         <img src="assets/img/iPhone Horizontal.png" alt="horizontal-phone">
                     </div>
+                    <div class="black__screen2"></div>
+                    <div class="button_black__screen2"></div>
                 </div>
             </div>
             <div class="slides_container">
@@ -45,6 +49,8 @@
                     <div class="slides__conten-group">
                         <img src="assets/img/Group 2.png" alt="three__phone">
                     </div>
+                    <div class="black__screen3"></div>
+                    <div class="button_black__screen3"></div>
                 </div>
             </div>
 
@@ -101,7 +107,7 @@
                     <div class="card__section--icon"><img src="assets/img/star.png" alt="pen"></div>
                     <div class="card__section--text">
                         <h3 class="card__section--name">Feel Like A Star</h3>
-                        <p class="card__section--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        <p class="card__section--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
                 </section>
             </div>
@@ -115,27 +121,26 @@
                 <p id="portfolio__describe--text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <nav class="portfolio__navigatio">
                 <ul class="portfolio__navigation--menu">
-                    <li class="portfolio__navigation--menu-item"><div class="frame-1"><a href="" class="portfolio__navigation--menu-link-1">All</a></div></li>
-                    <li class="portfolio__navigation--menu-item"><div class="frame"><a href="" class="portfolio__navigation--menu-link-2">Web Design</a></div></li>
-                    <li class="portfolio__navigation--menu-item"><div class="frame"><a href="" class="portfolio__navigation--menu-link-3">Graphic Design</a></div></li>
-                    <li class="portfolio__navigation--menu-item"><div class="frame"><a href="" class="portfolio__navigation--menu-link-4">Artwork</a></div></li>
+                    <li class="portfolio__navigation--menu-item"><div class="frame active_frame"><a  class="portfolio__navigation--menu-link first">All</a></div></li>
+                    <li class="portfolio__navigation--menu-item"><div class="frame"><a class="portfolio__navigation--menu-link second">Web Design</a></div></li>
+                    <li class="portfolio__navigation--menu-item"><div class="frame"><a class="portfolio__navigation--menu-link third">Graphic Design</a></div></li>
+                    <li class="portfolio__navigation--menu-item"><div class="frame"><a class="portfolio__navigation--menu-link fourth">Artwork</a></div></li>
                 </ul>
             </nav>
         </div>
         <div class="funny__images">
-            <div class=funny__images__img><img src="assets/img/boat.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/greenGirl.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/planet.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/robot.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/rabbit.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/boxes.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/somthing.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/hen.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/forestMoster.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/words.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/monster.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/envelope.png" alt="img"></div>
-            <div class=funny__images__img><img src="assets/img/envelope.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/boat.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/greenGirl.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/planet.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/robot.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/rabbit.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/boxes.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/somthing.png" alt="img" ></div>
+            <div class="images__items"><img src="assets/img/hen.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/forestMoster.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/words.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/monster.png" alt="img"></div>
+            <div class="images__items"><img src="assets/img/envelope.png" alt="img"></div>
         </div>
     </section>
     <div class="portfolio__bottom"></div>
@@ -192,13 +197,19 @@
                     <p id="registration__text--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="form">
-                <form action="" method="POST">
+                <form>
                     <input class="name" name="name" type="text" cols="80" placeholder="Name (Required)" required></input>
                     <input class="email" name="email" type="email" cols="85" placeholder="Email (Required)" required></input>
                     <input name="subject" class="subject" cols="85" placeholder="Subject"></input>
                     <textarea name="describe" class="describe" placeholder="Describe your project in detail..."></textarea>
                     <button class="form__confirm" >Submit</button>
                 </form>
+                <div class="pop_massege">
+                    <span class="pop_massege-header">Письмо отправлено</span>
+                    <span class="pop_massege-theme"></span>
+                    <span class="pop_massege-description"></span>
+                    <button class="pop_masseg-quit" >OK!</button>
+                </div>
                 <div class="contact__infomation">
                     <div class="contact__infomation--text">
                         <h5 class="contact__infomation--text-header">Contact Information</h5>

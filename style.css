@@ -147,11 +147,11 @@ span {
   color: #f06c64;
 }
 
-.navigation__menu--link.active {
+.navigation__menu--link.selected {
   color: #f06c64;
 }
 
-.navigation__menu--link.uncative {
+.navigation__menu--link.notchosen {
   color: #ffffff;
 }
 
@@ -257,9 +257,64 @@ span {
   position: relative;
   width: 797px;
   margin: 0 auto;
-/* 
-  animation: 0.5s ease-in-out; */
 }
+
+.black__screen1 {
+  display: none;
+  position: absolute;
+  height: 334px;
+  width: 188px;
+  background-color: black;
+  left: 14px;
+  top: 65px;
+}
+
+
+
+.button_black__screen1 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 87px;
+  top: 410px;
+}
+
+.black__screen2 {
+  display: none;
+  position: absolute;
+  width: 334px;
+  height: 188px;
+  background-color: black;
+  left: 372px;
+  top: 135px;
+}
+
+.button_black__screen2 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 322px;
+  top: 208px;
+}
+
+.black__screen3 {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 355px;
+  background-color: black;
+  left: 291px;
+  top: 68px;
+}
+
+.button_black__screen3 {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: 368px;
+  top: 433px;
+}
+
 
 
 .slides__content {
@@ -403,7 +458,7 @@ span {
   text-align: justify;
   line-height: 182%;
   overflow: hidden;
-  /* letter-spacing: -0.36px; */
+ 
   letter-spacing: -0.05px;
 }
 
@@ -466,6 +521,9 @@ a {
   text-decoration: none;
 }
 
+
+
+
 .frame {
   position: middle;
   height: 20px;
@@ -488,17 +546,25 @@ a {
   
 }
 
-.portfolio__navigation--menu-link-1 {
+.active_frame {
+  border: 1px solid #dedede;
+}
+
+.portfolio__navigation--menu-link {
+  cursor: pointer;
+}
+
+.portfolio__navigation--menu-link.first {
   display: inline-block;
   font-size: 12px;
-  color: #dedede;
+  color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
   text-align: left;
   padding: 0 6px 0 7px;
   margin: auto 0;
 }
-.portfolio__navigation--menu-link-2 {
+.portfolio__navigation--menu-link.second {
   display: inline-block;
   font-size: 12px;
   color: #767e9e;
@@ -509,7 +575,7 @@ a {
   margin: auto 0;
 }
 
-.portfolio__navigation--menu-link-3 {
+.portfolio__navigation--menu-link.third {
   display: inline-block;
   font-size: 12px;
   color: #767e9e;
@@ -520,7 +586,7 @@ a {
   margin: auto 0;
 }
 
-.portfolio__navigation--menu-link-4 {
+.portfolio__navigation--menu-link.fourth {
   display: inline-block;
   font-size: 12px;
   color: #767e9e;
@@ -534,12 +600,23 @@ a {
 
 .funny__images {
   display: grid;
+  max-height: 600px;
+  width: 940px;
   grid-gap: 17px 20px;
   grid-template-columns: 220px 220px 220px 220px;
-  width: 940px;
-  height: 600px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.lightOn {
+  height: 187px;
+  width: 220px;
+  position:absolute;
+  outline: 5px solid #F06C64;
+}
+
+.change {
+  order: 1;
 }
 
 .portfolio__bottom {
@@ -736,6 +813,81 @@ a {
   color: #f48c8f;
   font-family: "Lato";
   margin: 13px 0 0 0;
+}
+
+.pop_massege { 
+  display: none;
+  position: fixed;
+  left: 685px;
+  top: 200px;
+  height: 340px;
+  width: 500px;
+  background-color: #d6564f;
+  border: 5px solid  #666d89;
+  border-radius: 10px;
+}
+
+.pop_massege-header {
+  display: inline-block;
+  font-size: 25px;
+  color: aliceblue;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+  letter-spacing: -0.16px;
+  height: 22px;
+  width: 250px;
+  margin: 15px 0 0 125px;
+}
+
+.pop_massege-theme {
+  display: inline-block;
+  font-size: 20px;
+  color: aliceblue;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+  letter-spacing: -0.16px;
+  height: 22px;
+  width: 250px;
+  margin: 30px 0 0 125px;
+}
+
+.pop_massege-description {
+  display: inline-block;
+  font-size: 20px;
+  color: aliceblue;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+  letter-spacing: -0.16px;
+  height: 70іpx;
+  width: 250px;
+  margin: 30px 0 0 125px;
+  overflow: auto;
+}
+
+.pop_masseg-quit {
+  height: 38px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  background-color: #d6564f;
+  outline: none;
+  border-color:  #666d89;
+  font-size: 15px;
+  line-height: 22px;
+  color: aliceblue;
+  font-family: "Lato";
+  margin: 70px 0 0 155px;
+}
+
+.disable {
+  display: block;
 }
 
 .form__confirm:hover {
