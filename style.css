@@ -298,11 +298,11 @@ span {
 .black__screen1 {
   display: none;
   position: absolute;
-  height: 334px;
-  width: 188px;
+  height: 335px;
+  width: 189px;
   background-color: black;
   left: 14px;
-  top: 65px;
+  top: 67px;
 }
 
 .button_black__screen1 {
@@ -317,11 +317,11 @@ span {
 .black__screen2 {
   display: none;
   position: absolute;
-  width: 334px;
-  height: 188px;
+  width: 335px;
+  height: 189px;
   background-color: black;
-  left: 372px;
-  top: 135px;
+  left: 374px;
+  top: 138px;
 }
 
 .button_black__screen2 {
@@ -365,8 +365,10 @@ span {
 }
 
 .slides__content-2 {
-  width: 798px;
-  height: 489px;
+  /* width: 798px;
+  height: 489px; */
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1536,6 +1538,20 @@ a {
 
   h1.to-left {
     margin: 0 0 0 31px;
+  }
+
+  .dark-background {
+    position: absolute;
+    z-index: 9996;
+  
+    width: 100vw;
+    height: 100vh;
+  
+    background: var(--dark-background);
+    opacity: 0.6;
+  
+    transition: opacity 0.6s;
+    cursor: pointer;
   }
 
   .container {

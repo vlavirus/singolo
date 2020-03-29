@@ -230,32 +230,3 @@ document.querySelector('.pop_masseg-quit').addEventListener('click', (event) =>{
 });
 
 
-
-const burger = document.querySelector(".header__burger");
-const header = document.querySelector("header");
-const h1 = document.querySelector("h1");
-const nav = header.querySelector("nav");
-let menuOpened = false;
-// darkenContent(header);
-const headerBackground = header.querySelector(".dark-background");
-hideDarkBackground();
-
-
-
-function drawMenu() {
-    if (document.documentElement.clientWidth >= 768) {
-      menuOpened = true;
-    }
-    if(menuOpened) {
-      hideDarkBackground();
-      burger.classList.remove("rotated90");
-      h1.classList.remove("to-left");
-      nav.classList.remove("to-right");
-    } else {
-      showDarkBackground();
-      burger.classList.add("rotated90");
-      h1.classList.add("to-left");
-      nav.classList.add("to-right");
-    }
-    menuOpened = !menuOpened;
-  }
